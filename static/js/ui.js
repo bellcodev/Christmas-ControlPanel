@@ -18,8 +18,8 @@ function renderMainMenu() {
                     Open Port
                 </button>
 
-                <button class="menu-btn">
-                    def 4
+                <button class="menu-btn" onclick="renderMyIP()">
+                    My Public IP
                 </button>
 
                 <button class="menu-btn">
@@ -31,6 +31,21 @@ function renderMainMenu() {
                 </button>
             </div>
         </section>
+    `
+}
+
+async function renderMyIP() {
+    const content = document.getElementById("content")
+    const res = await fetch("http://api.ipify.org?format=json")
+    const data = await res.json()
+    content.innerHTML = `
+    <h1>My Ip</h1>
+    <div class="card">
+        <p><strong>Your public ip is: ${data.ip}</strong></p>
+    </div>
+    <button class="back-btn" onclick="renderMainMenu()">
+        ← Back to main menu
+    </button>
     `
 }
 
@@ -126,7 +141,7 @@ async function renderSystemMenu() {
     const uptimeHours = (uptime.uptime_seconds / 3600).toFixed(2)
 
     content.innerHTML = `
-        <h1>Información del Sistema</h1>
+        <h1>Full System Info</h1>
 
         <section class="system-menu">
             <div class="card">
