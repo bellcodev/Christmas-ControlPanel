@@ -1,5 +1,6 @@
 # Christmas Control Panel
-<img width="1279" height="580" alt="image" src="https://github.com/user-attachments/assets/cc1a4912-ff9f-4c82-91f5-a8bb0e62bb8a" />
+| <img width="1279" height="580" alt="image" src="https://github.com/user-attachments/assets/cc1a4912-ff9f-4c82-91f5-a8bb0e62bb8a" /> |
+|---|
 
 # 🎄 Christmas Control Panel
 Un panel de control para PC con un estilo navideño moderno, creado especialmente para la temporada. Su objetivo es ofrecer herramientas simples, rápidas y útiles dentro de una interfaz festiva y agradable.
@@ -63,6 +64,28 @@ El panel utiliza una interfaz inspirada en la estética navideña:
 
 Perfecto para lanzar durante las fiestas.
 
+---
+## Estructura del Proyecto
+```
+📦 Christmas-ControlPanel
+├─ 🎁 libs/
+│   ├─ 📄 _init_.py
+│   ├─ 🔧 port_utils.py
+│   └─ 🖥 system_info.py
+│
+├─ 🎨 static/
+│   ├─ 🌟 css/
+│   │   └─ 🎀 style.css
+│   ├─ 🎄 js/
+│   │   ├─ ✨ script.js
+│   │   └─ 🎅 ui.js
+│   └─ 🏠 index.html
+│
+├─ 📜 LICENSE
+├─ 📘 README.md
+├─ 🎅 main.py
+└─ 📦 requirements.txt
+```
 ---
 
 ## 🛠 Estado del proyecto
