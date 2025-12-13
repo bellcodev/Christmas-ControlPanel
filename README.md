@@ -1,5 +1,5 @@
 # Christmas Control Panel
-| <img width="1279" height="580" alt="image" src="https://github.com/user-attachments/assets/cc1a4912-ff9f-4c82-91f5-a8bb0e62bb8a" /> |
+| <img width="1339" height="616" alt="image" src="https://github.com/user-attachments/assets/da551ab4-9052-446e-8017-5589c40dd8b2" /> |
 |---|
 
 # 🎄 Christmas Control Panel
@@ -13,7 +13,7 @@ Actualmente el proyecto está en desarrollo activo y se irán añadiendo nuevas 
 
 ### ✅ *System Info*
 
-| <img width="1291" height="634" alt="image" src="https://github.com/user-attachments/assets/3ea5d473-7ffe-4c07-bdc0-510d8784733f" /> |
+| <img width="1325" height="629" alt="image" src="https://github.com/user-attachments/assets/c133b9ad-eef7-48c4-bebf-4cebd57490a4" /> |
 |---|
 
 
@@ -26,7 +26,7 @@ Muestra información básica del sistema, como:
 
 ### ✅ *IP Geolocate*
 
-| <img width="1161" height="615" alt="image" src="https://github.com/user-attachments/assets/593b2ed7-9058-4677-912d-cf73a6b8b077" /> |
+| <img width="1338" height="625" alt="image" src="https://github.com/user-attachments/assets/a4ff6c73-e272-4133-8816-f72929758d8d" /> |
 |---|
 
 
@@ -39,7 +39,7 @@ Permite obtener la geolocalización aproximada de una dirección IP:
 
 ### ✅ *Run Port*
 
-| <img width="1000" height="600" alt="image" src="https://github.com/user-attachments/assets/6fa5c8fb-4b54-41f0-a88c-de72547f16fc" /> | <img width="1000" height="45" alt="image" src="https://github.com/user-attachments/assets/94e9a2e2-939c-4801-98cf-2e0852361c63" /> |
+| <img width="1000" height="600" alt="image" src="https://github.com/user-attachments/assets/c2e74f4d-f605-4ed0-8e85-72402b9b32b7" /> | <img width="1000" height="45" alt="image" src="https://github.com/user-attachments/assets/94e9a2e2-939c-4801-98cf-2e0852361c63" /> |
 |---|---|
 
 Permite abrir un puerto local en una carpeta o archivo de la PC:
