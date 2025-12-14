@@ -54,7 +54,7 @@ Permite abrir un puerto local en una carpeta o archivo de la PC:
 Muestra tu IP publica en formato de texto
 
 ### ✅ *Wifi Utils*
-| <img width="1338" height="664" alt="image" src="https://github.com/user-attachments/assets/8f7bfa1f-4b4f-44d2-bf22-3a647a0c5dfc" /> |
+| <img width="1328" height="672" alt="image" src="https://github.com/user-attachments/assets/16d7b32e-2b0b-4d38-af07-3f852ae7aa54" /> |
 |---|
 
 Conectarse a redes wifi facilmente desede la web-app
