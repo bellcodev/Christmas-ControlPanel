@@ -75,6 +75,9 @@ async function renderWifiUtils() {
                 Connect
             </button>
         </div>
+        <button class="back-btn" onclick="renderMainMenu()">
+            ← Back to main menu
+        </button>
     `
 }
 
