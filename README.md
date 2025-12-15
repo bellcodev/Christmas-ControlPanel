@@ -47,29 +47,35 @@ Permite abrir un puerto local en una carpeta o archivo de la PC:
 - Introduce ubicacion del archivo a mostrar
 - Abre el puerto en localhost
 
-### ✅ *My Public IP*
+### ✅ My Public IP
 | <img width="1184" height="391" alt="image" src="https://github.com/user-attachments/assets/c48e198a-91af-4155-8c39-0c2ea5a3d5db" /> |
 |---|
 
-Muestra tu IP publica en formato de texto
+🌐 Muestra tu *IP pública* en texto plano, de forma inmediata y lista para copiar. Ideal para diagnósticos rápidos, configuraciones de red o compartirla sin complicaciones.
 
-### ✅ *Wifi Utils*
+---
+
+### ✅ Wifi Utils
 | <img width="1328" height="672" alt="image" src="https://github.com/user-attachments/assets/16d7b32e-2b0b-4d38-af07-3f852ae7aa54" /> |
 |---|
 
-Conectarse a redes wifi facilmente desede la web-app
+📶 Explora, selecciona y conéctate a *redes Wi‑Fi cercanas* directamente desde la web‑app. Gestiona tus conexiones sin abrir configuraciones del sistema y con una interfaz clara y accesible.
 
-### ✅ *Port List*
+---
+
+### ✅ Port List
 | <img width="1335" height="683" alt="image" src="https://github.com/user-attachments/assets/762eb1b5-5a7d-43a4-aca3-f5d72075d0c5" /> |
 |---|
 
-Muestra todos los puertos abiertos, sus direcciones, procesos y PIDs
+🧭 Escanea tu sistema y muestra *todos los puertos abiertos*, incluyendo dirección, protocolo, proceso asociado y PID. Todo organizado en una tabla limpia y fácil de interpretar.
 
-### ✅ *Port Check*
+---
+
+### ✅ Port Check
 | <img width="1346" height="683" alt="image" src="https://github.com/user-attachments/assets/72c14121-d283-4520-81db-ff4c71fb5dc5" /> |
 |---|
 
-Revisa e informa si un puerto en una direccion especifica esta activo o accesible
+🔍 Comprueba si un *puerto específico* está abierto o accesible en una dirección determinada. Perfecto para validar servicios locales, APIs, servidores o configuraciones remotas.
 
 ---
 
