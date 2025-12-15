@@ -4,6 +4,8 @@ from fastapi.responses import FileResponse
 from libs.system_info import get_system_info
 from libs.port_utils import runPort
 from libs.wifi_utils import connect_to_network, scan_networks
+from libs.port_list import portList
+from libs.port_check import portCheck
 
 app = FastAPI()
 
@@ -18,7 +20,7 @@ async def systemInfo():
     info = get_system_info()
     return info
 
-@app.post("/api/run-port")
+@app.post("/api/ports/run-port")
 async def openPort(
     port: str = Form(...),
     loc: str = Form(...)
@@ -38,3 +40,16 @@ async def connectWifi(
 ):
     connect = connect_to_network(ssid, pswd)
     return connect
+
+@app.get("/api/ports/list")
+async def apiPortList():
+    ports = portList()
+    return ports
+
+@app.post("/api/ports/check")
+async def apiPortCheck(
+    a: str = Form(...),
+    p: str = Form(...)
+):
+    result = portCheck(a, p)
+    return result
