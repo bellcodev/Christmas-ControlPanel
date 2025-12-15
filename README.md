@@ -1,5 +1,5 @@
 # Christmas Control Panel
-| <img width="1339" height="616" alt="image" src="https://github.com/user-attachments/assets/da551ab4-9052-446e-8017-5589c40dd8b2" /> |
+| <img width="1349" height="683" alt="image" src="https://github.com/user-attachments/assets/31149a80-f7e4-408c-bfa4-48923b1ed494" /> |
 |---|
 
 # 🎄 Christmas Control Panel
@@ -59,6 +59,17 @@ Muestra tu IP publica en formato de texto
 
 Conectarse a redes wifi facilmente desede la web-app
 
+### ✅ *Port List*
+| <img width="1335" height="683" alt="image" src="https://github.com/user-attachments/assets/762eb1b5-5a7d-43a4-aca3-f5d72075d0c5" /> |
+|---|
+
+Muestra todos los puertos abiertos, sus direcciones, procesos y PIDs
+
+### ✅ *Port Check*
+| <img width="1346" height="683" alt="image" src="https://github.com/user-attachments/assets/72c14121-d283-4520-81db-ff4c71fb5dc5" /> |
+|---|
+
+Revisa e informa si un puerto en una direccion especifica esta activo o accesible
 
 ---
 
@@ -76,9 +87,14 @@ Perfecto para lanzar durante las fiestas.
 ```
 📦 Christmas-ControlPanel
 ├─ 🎁 libs/
+│   ├─ 🔧 PowerShell/
+│   │   ├─ 📳 port_check.ps1
+│   │   └─ 📂 port_list.ps1
 │   ├─ 📄 _init_.py
+│   ├─ 🔧 port_list.py
+│   ├─ 🔧 port_check.py
 │   ├─ 🔧 port_utils.py
-│   └─ 🖥 system_info.py
+│   ├─ 🖥 system_info.py
 │   └─ 🖥 wifi_utils.py
 │
 ├─ 🎨 static/
@@ -98,10 +114,6 @@ Perfecto para lanzar durante las fiestas.
 
 ## 🛠 Estado del proyecto
 El proyecto *está en desarrollo*.  
-Próximas funciones planificadas:
-- Monitor de rendimiento (CPU, RAM, disco)
-- Información de red en tiempo real
-- Herramientas de diagnóstico
 - Módulos adicionales según feedback
 
 ---
