@@ -26,12 +26,90 @@ function renderMainMenu() {
                     Wifi Utils
                 </button>
 
+                <button class="menu-btn" onclick="renderPortList()">
+                    Ports List
+                </button>
+
+                <button class="menu-btn" onclick="renderPortCheck()">
+                    Port Check
+                </button>
+
                 <button class="menu-btn">
-                    def 6
+                    def 8
+                </button>
+
+                <button class="menu-btn">
+                    def 9
+                </button>
+
+                <button class="menu-btn">
+                    def 10
+                </button>
+
+                <button class="menu-btn">
+                    def 11
+                </button>
+
+                <button class="menu-btn">
+                    def 12
                 </button>
             </div>
         </section>
     `
+}
+
+async function checkPort() {
+    let address = document.getElementById("address")
+    let port = document.getElementById("port")
+    const txt = document.getElementById("text")
+    txt.innerText = "loading..."
+    const form = new FormData()
+    form.append("a", address.value)
+    form.append("p", port.value)
+    let res = await fetch("/api/ports/check", {
+        method: "POST",
+        body: form
+    })
+    const data = await res.json()
+    txt.innerText = data
+}
+
+async function renderPortCheck() {
+    const content = document.getElementById("content")
+    content.innerHTML = `
+        <h1>Ports Check</h1>
+        <div class="card">
+            <input type="text" id="address" placeholder="Address ex: localhost"/>
+            <br>
+            <input type="text" id="port" placeholder="Port ex: 3000" />
+            <br>
+            <button class="menu-btn" onclick="checkPort()">Check</button>
+            <div id="text"></div>
+        </div>
+        <button class="back-btn" onclick="renderMainMenu()">
+            ← Back to main menu
+        </button>
+    `
+}
+
+async function renderPortList() {
+    const content = document.getElementById("content")
+    content.innerHTML = `
+        <h1>Ports List</h1>
+        <div class="card">
+            <div id="info"></div>
+        </div>
+        <button class="back-btn" onclick="renderMainMenu()">
+            ← Back to main menu
+        </button>
+    `
+    const info = document.getElementById("info")
+    info.innerText = `loading...`
+    const res = await fetch("/api/ports/list")
+    const data = await res.json()
+    setTimeout(function () {
+        info.innerText = data
+    }, 5000)
 }
 
 async function wifiScan() {
@@ -53,7 +131,6 @@ async function wifiConect() {
         body: form
     })
     const data = await res.json()
-
 }
 
 async function renderWifiUtils() {
@@ -117,7 +194,7 @@ async function handleRunPort() {
 
     let res
     try {
-        res = await fetch("/api/run-port", {
+        res = await fetch("/api/ports/run-port", {
             method: "POST",
             body: form
         })
