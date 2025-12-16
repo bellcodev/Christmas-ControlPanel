@@ -54,6 +54,10 @@ function renderMainMenu() {
                     def 12
                 </button>
             </div>
+            <br>
+
+    <a href="https://github.com/bellcodev"><img src="/static/assets/github-icon.svg" alt="My Github"></a>
+    <a href="https://instagram.com/whoisronystar"><img src="/static/assets/instagram-icon.svg" alt="My Instagram"></a>
         </section>
     `
 }
