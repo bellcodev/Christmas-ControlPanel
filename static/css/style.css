@@ -429,3 +429,12 @@ table tr:hover td {
     pointer-events: none;
     display: block;
 }
+
+img {
+    width: 30px;
+}
+
+a {
+    color: #2a9d8f;
+    text-decoration: none;
+}
