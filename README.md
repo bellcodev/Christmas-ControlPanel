@@ -1,5 +1,5 @@
 # 🎄 Christmas Control Panel
-| <img width="1348" height="679" alt="image" src="https://github.com/user-attachments/assets/8d055620-3eb0-4a5a-8bbb-94ff095d4b49" /> |
+| <img width="1347" height="679" alt="image" src="https://github.com/user-attachments/assets/2767f1d8-1f53-47e2-b521-8564677a3ecc" /> |
 |---|
 
 ![Python](https://img.shields.io/badge/Python-3.10%2B-blue?logo=python)
@@ -86,6 +86,12 @@ Permite abrir un puerto local en una carpeta o archivo de la PC:
 |---|
 
 🔍 Comprueba si un *puerto específico* está abierto o accesible en una dirección determinada. Perfecto para validar servicios locales, APIs, servidores o configuraciones remotas.
+
+### ✅ Search Files
+| <img width="1349" height="678" alt="image" src="https://github.com/user-attachments/assets/0cd5865a-561d-4720-975f-be92e3be33b9" /> |
+|---|
+
+🔍 **Busca** uno o mas archivos en un disco o ubicacion exacta en la pc introduciendo el nombre o solamente con lo que empieza el nombre del archivo a buscar.
 
 ---
 
