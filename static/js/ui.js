@@ -34,8 +34,8 @@ function renderMainMenu() {
                     Port Check
                 </button>
 
-                <button class="menu-btn">
-                    def 8
+                <button class="menu-btn" onclick="renderSearchFiles()">
+                    Search Files
                 </button>
 
                 <button class="menu-btn">
@@ -56,9 +56,43 @@ function renderMainMenu() {
             </div>
             <br>
 
-    <a href="https://github.com/bellcodev"><img src="/static/assets/github-icon.svg" alt="My Github"></a>
-    <a href="https://instagram.com/whoisronystar"><img src="/static/assets/instagram-icon.svg" alt="My Instagram"></a>
+    <a target="blank" href="https://github.com/bellcodev"><img src="/static/assets/github-icon.svg" alt="My Github"></a>
+    <a target="blank" href="https://instagram.com/whoisronystar"><img src="/static/assets/instagram-icon.svg" alt="My Instagram"></a>
         </section>
+    `
+}
+
+async function searchFile() {
+    let disk = document.getElementById("disk")
+    let name = document.getElementById("name")
+    const txt = document.getElementById("text")
+    txt.innerText = "loading..."
+    const form = new FormData()
+    form.append("d", disk.value)
+    form.append("n", name.value)
+    let res = await fetch("/api/files/search", {
+        method: "POST",
+        body: form
+    })
+    const data = await res.json()
+    txt.innerText = data
+}
+
+async function renderSearchFiles() {
+    const content = document.getElementById("content")
+    content.innerHTML = `
+        <h1>Search Files</h1>
+        <div class="card">
+            <input type="text" id="disk" placeholder="Disk ex: C: or D: etc."/>
+            <br>
+            <input type="text" id="name" placeholder="File name ex: movie1" />
+            <br>
+            <button class="menu-btn" onclick="searchFile()">Search</button>
+            <div id="text"></div>
+        </div>
+        <button class="back-btn" onclick="renderMainMenu()">
+            ← Back to main menu
+        </button>
     `
 }
 
@@ -215,8 +249,7 @@ async function handleRunPort() {
         resultBox.textContent = "Server error:\n" + text
         return
     }
-
-    resultBox.textContent = JSON.stringify(data, null, 2)
+    resultBox.innerHTML = `Status: ${data.status} <br> ${data.message} <br> Path: ${data.path}`
 }
 
 window.handleRunPort = handleRunPort
