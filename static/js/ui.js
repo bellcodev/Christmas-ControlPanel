@@ -75,7 +75,10 @@ async function searchFile() {
         body: form
     })
     const data = await res.json()
-    txt.innerText = data
+    txt.innerHTML = ``
+    for (let f of data) {
+        txt.innerHTML += `<br> ${f}`
+    }
 }
 
 async function renderSearchFiles() {
